@@ -1,8 +1,7 @@
 package com.example.springmvc.rest;
 
 
-import com.example.springmvc.employee.EmployeeReposiratory;
-import com.example.springmvc.employee.EmployeeService;
+import com.example.springmvc.service.EmployeeService;
 import com.example.springmvc.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -49,9 +48,9 @@ public class EmployeeRestController {
     @PutMapping("/employees")
     public Employee updateTheEmployee(@RequestBody Employee theEmployee)
     {
-        Employee dbEmployee=employeeService.save(theEmployee);
+       Employee myEmployee= employeeService.save(theEmployee);
 
-        return dbEmployee;
+        return myEmployee;
     }
 
     @DeleteMapping("/employees/{employeeId}")

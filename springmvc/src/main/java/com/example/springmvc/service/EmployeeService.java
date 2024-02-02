@@ -1,4 +1,4 @@
-package com.example.springmvc.employee;
+package com.example.springmvc.service;
 
 import com.example.springmvc.entity.Employee;
 

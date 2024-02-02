@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/springmvc.iml" filepath="$PROJECT_DIR$/.idea/springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc/springmvc.iml" filepath="$PROJECT_DIR$/springmvc/springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springmvc_aop.iml" filepath="$PROJECT_DIR$/.idea/springmvc_aop.iml" />
     </modules>
   </component>
 </project>

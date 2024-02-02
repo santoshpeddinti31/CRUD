@@ -1,5 +1,6 @@
-package com.example.springmvc.employee;
+package com.example.springmvc.service;
 
+import com.example.springmvc.employee.EmployeeReposiratory;
 import com.example.springmvc.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class EmployeeServiceImpl implements EmployeeService{
+public class EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeReposiratory employeeReposiratory;
 
@@ -47,8 +48,8 @@ public class EmployeeServiceImpl implements EmployeeService{
     @Override
     public Employee save(Employee theEmployee) {
 
-        Employee dbEmployee=employeeReposiratory.save(theEmployee);
-        return dbEmployee;
+        employeeReposiratory.save(theEmployee);
+        return theEmployee;
     }
 
     @Override
